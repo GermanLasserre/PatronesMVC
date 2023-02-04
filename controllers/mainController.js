@@ -1,13 +1,13 @@
 const path = require("path");
 
-module.exports = {
-
+const controller = {
     main: (req, res) => {
         return res.sendFile(path.join(__dirname, "../views/home.html"));
     },
 
-    main: (req, res) => {
+    about: (req, res) => {
         return res.sendFile(path.join(__dirname, "../views/about.html"));
-    },
-
+    }
 }
+
+module.exports = controller;
